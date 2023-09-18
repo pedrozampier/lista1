@@ -1,2 +1,20 @@
-Sim, há diferenças práticas significativas entre pesquisar uma chave em uma matriz unidimensional ordenada e desordenada.
+15) Sim, há diferenças práticas significativas entre pesquisar uma chave em uma matriz unidimensional ordenada e desordenada.
 A escolha entre uma matriz ordenada e uma matriz desordenada depende dos requisitos específicos da aplicação, a escolha depende de um equilíbrio entre desempenho de pesquisa e facilidade de manutenção, levando em consideração os padrões de uso específicos da matriz em sua aplicação.
+
+17)Conjunto de 100 elementos:Busca Binária: log2(100) ≈ 6.64 comparações no pior caso.
+Busca Sequencial: 100 comparações no pior caso.
+Conjunto de 1.000 elementos:Busca Binária: log2(1.000) ≈ 9.96 comparações no pior caso.
+Busca Sequencial: 1.000 comparações no pior caso.
+Conjunto de 10.000 elementos:Busca Binária: log2(10.000) ≈ 13.29 comparações no pior caso.
+Busca Sequencial: 10.000 comparações no pior caso.
+Conjunto de 100.000 elementos:Busca Binária: log2(100.000) ≈ 16.64 comparações no pior caso.
+Busca Sequencial: 100.000 comparações no pior caso.
+
+Conjunto de 100 elementos:
+Ganho Percentual = ((100 - 6.64) / 100) * 100 ≈ 93.36%
+Conjunto de 1.000 elementos:
+Ganho Percentual = ((1.000 - 9.96) / 1.000) * 100 ≈ 99.004%
+Conjunto de 10.000 elementos:
+Ganho Percentual = ((10.000 - 13.29) / 10.000) * 100 ≈ 99.71%
+Conjunto de 100.000 elementos:
+Ganho Percentual = ((100.000 - 16.64) / 100.000) * 100 ≈ 99.983%
