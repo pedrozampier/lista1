@@ -158,14 +158,44 @@ public class MetodosDeArray{
         return temp;
     }
 
+    //EXERCICIO 13 INICIO
+    public void embarcarPassageiro(String[][] passageiros, int poltrona, String nome) {
+        if (poltrona >= 1 && poltrona <= 42) {
+            if (passageiros[poltrona - 1][0] == null) {
+                passageiros[poltrona - 1][0] = String.valueOf(poltrona); // Armazena o número da poltrona
+                passageiros[poltrona - 1][1] = nome; // Armazena o nome do passageiro
+            } else {
+                System.out.println("Poltrona ocupada.");
+            }
+        } else {
+            System.out.println("Poltrona inválida.");
+        }
+    }
+    
+    public void mostrarPassageiros(String[][] passageiros) {
+        for (String[] passageiro : passageiros) {
+            if (passageiro[0] != null) {
+                System.out.println(passageiro[0] + " - " + passageiro[1]);
+            }
+        }
+    }
+
+    //FIM
 
     public static void main(String[] args) {
+
+        String[][] passageiros = new String[42][2];
         
         MetodosDeArray metodos = new MetodosDeArray();
         int[] array = {64, 34, 25, 12, 22, 11, 90};
 
-        System.out.println(metodos.gnomeSort(array));
-        metodos.gerarCartela();
+
+        metodos.embarcarPassageiro(passageiros, 5, "João");
+        metodos. embarcarPassageiro(passageiros, 10, "Maria");
+        metodos.embarcarPassageiro(passageiros, 2, "Pedro");
+        //System.out.println(metodos.gnomeSort(array));
+        //metodos.gerarCartela();
+        metodos.mostrarPassageiros(passageiros);
     }
 } 
 

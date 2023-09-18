@@ -1,0 +1,2 @@
+Sim, há diferenças práticas significativas entre pesquisar uma chave em uma matriz unidimensional ordenada e desordenada.
+A escolha entre uma matriz ordenada e uma matriz desordenada depende dos requisitos específicos da aplicação, a escolha depende de um equilíbrio entre desempenho de pesquisa e facilidade de manutenção, levando em consideração os padrões de uso específicos da matriz em sua aplicação.
